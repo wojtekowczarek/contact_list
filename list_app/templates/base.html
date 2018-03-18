@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>
+        {% block title %}
+        Base Template
+        {% endblock %}
+    </title>
+
+</head>
+<body>
+    <style>
+        body {
+            background-color: DarkSalmon;
+        }
+    </style>
+
+    <h1>Contact List</h1>
+    {% block content %}
+    {% endblock %}
+
+
+
+
+    {% block footer %}
+    Copyright by Wojtek
+    {% endblock %}
+</body>
+</html>
