@@ -24,5 +24,4 @@ urlpatterns = [
     path('modify/<int:id>', views.ModifyPersonView.as_view(), name='modify_person'),
     path('delete/<int:id>', views.DeletePersonView.as_view(), name='delete_person'),
     path('show/<int:id>', views.ShowPersonView.as_view(), name='show_person'),
-    
 ]
