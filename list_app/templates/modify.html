@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+Modify Person's Details
+{% endblock %}
+
+{% block content %}
+    <h3>Basic Details for contact number: {{ person.id }}.</h3>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit">
+    </form>
+    <a href="/add_address/{{ person.id }}"><button>Add Address</button></a>
+    <a href="/add_email/{{ person.id }}"><button>Add Email</button></a>
+{% endblock %}
+
+{% block footer %}
+<p>Modify Person View</p>
+{% endblock %}

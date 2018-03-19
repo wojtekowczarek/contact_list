@@ -24,4 +24,7 @@ urlpatterns = [
     path('modify/<int:person_id>', views.ModifyPersonView.as_view(), name='modify_person'),
     path('delete/<int:person_id>', views.DeletePersonView.as_view(), name='delete_person'),
     path('show/<int:person_id>', views.ShowPersonView.as_view(), name='show_person'),
+    path('add_address/<int:person_id>', views.AddAddressView.as_view(), name='add_address'),
+    path('add_email/<int:person_id>', views.AddEmailView.as_view(), name='add_email'),
+
 ]
