@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Show Person's Details
+{% endblock %}
+
+{% block content %}
+        <ul>
+            <li>Name: {{ person.name }}</li>
+            <li>Surname: {{ person.surname }}</li>
+            <li>Description: {{ person.description }}</li>
+        </ul>
+
+    <a href="/modify/{{ person.id }}"><button>Modify Details</button></a>
+{% endblock %}
+
+{% block footer %}
+Show Person View
+{% endblock %}
